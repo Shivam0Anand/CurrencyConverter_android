@@ -1,5 +1,6 @@
 package com.shivam.currencyconverter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -33,6 +34,15 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<String> currencyAdapter = new ArrayAdapter<String>(MainActivity.this,android.R.layout.simple_list_item_1, getResources().getStringArray(R.array.Currency));
         currencyAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         currencySpinner.setAdapter(currencyAdapter);
+    }
+
+    public void convert (View view){
+        Spinner spinner = findViewById(R.id.chooseCurrency);
+        String name = spinner.getSelectedItem().toString();
+
+        Intent intent = new Intent(this,Conversion.class);
+        intent.putExtra("EXTRA MESSAGE",name);
+        startActivity(intent);
     }
 
     @Override
