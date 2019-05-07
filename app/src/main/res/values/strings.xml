@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">Currency Converter</string>
     <string name="action_settings">Settings</string>
+    <string name="button_label">OK</string>
+    
+    <string-array name="Currency">
+        <item>Choose</item>
+        <item>USD to INR</item>
+        <item>EUR to INR</item>
+        <item>RUB to INR</item>
+    </string-array>
+    
 </resources>
