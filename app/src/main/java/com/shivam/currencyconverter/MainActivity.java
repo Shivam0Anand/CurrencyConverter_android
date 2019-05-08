@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         Spinner spinner = findViewById(R.id.chooseCurrency);
         String name = spinner.getSelectedItem().toString();
 
-        Intent intent = new Intent(this,Conversion.class);
+        Intent intent = new Intent(this,conversion.class);
         intent.putExtra("EXTRA MESSAGE",name);
         startActivity(intent);
     }
