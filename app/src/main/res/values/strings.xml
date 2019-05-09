@@ -4,11 +4,10 @@
     <string name="button_label">OK</string>
 
     <string-array name="Currency">
-        <item>Choose</item>
         <item>USD to INR</item>
         <item>EUR to INR</item>
         <item>RUB to INR</item>
     </string-array>
-    <string name="title_activity_conversion">Conversion</string>
+    <string name="conversion">Convert</string>
 
 </resources>
